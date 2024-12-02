@@ -3,7 +3,6 @@ import pymongo, os
 from pymongo import MongoClient,server_api
 import uuid
 
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -11,11 +10,8 @@ def hello():
     return "WELCOME TO THE SERVER"
 
 
-
-
-
-@app.route('/extractSummary/<int:article_num>/<string:key_param>', methods=['GET'])
-def extractSummary(article_num:int,key_param:str):
+@app.route('/extract/<int:article_num>/<string:key_param>', methods=['GET'])
+def extract_summary(article_num:int,key_param:str):
     client = False
     try:
         url = os.getenv('MONGO_URL')
@@ -44,7 +40,8 @@ def extractSummary(article_num:int,key_param:str):
 
 
 @app.route("/insert/<string:username>/<int:age>/", methods= ['POST'])
-def insertdocs(username:str,age:int):
+def insertdocs(username:str,age:int):  #take user name and aage as param andq assign a userid.
+                                   # henceforth user id shall be used to filtera and update data.
     docs = {
         "username": username,
         "age": age,
@@ -61,10 +58,6 @@ def insertdocs(username:str,age:int):
                  "ex_a3": False,
                  "ex_a4": False
                 },
-                "article":{
-                    "completed": 5,
-                    "target": 46 #static #46 assumption
-                }
             },
             "legislative": {
                 "area_progress":{
@@ -73,10 +66,6 @@ def insertdocs(username:str,age:int):
                  "lg_a3": False,
                  "lg_a4": False
                  },
-                "article":{
-                    "completed": 5,
-                    "target": 46  # static #46 assumption
-                }
             },
             "judiciary": {
                 "area_progress":{
@@ -85,10 +74,6 @@ def insertdocs(username:str,age:int):
                  "jd_a3": False,
                  "jd_a4": False
                 },
-                "article":{
-                    "completed": 5,
-                    "target": 46  # static #46 assumption
-                }
             }
         }
     }
@@ -103,6 +88,57 @@ def insertdocs(username:str,age:int):
         collection = database["user_data"]
         collection.insert_one(docs)
         print("dataSucessfully inserted!!")
+        return jsonify({"data":"inserted"}), 201
+    except Exception as e:
+        error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
+        print(error_mssg)
+        return error_mssg
+    finally:
+        if client:
+            client.close()
+
+
+@app.route("/score",methods=["POST"])
+def update_score():
+    requested_data = request.get_json()
+    if not requested_data or "user_id" not in requested_data or "score" not in requested_data:
+        return jsonify({"Error: invalid parameters or userid invalid"}), 400
+    userid = requested_data['user_id']
+    point = requested_data['score']
+    client = None
+    try:
+        url = os.getenv('MONGO_URL')
+        if not url:
+            return jsonify({"error":"NO URL FOUND"}), 500
+        client = MongoClient(url, server_api=pymongo.server_api.ServerApi(
+            version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["user_data"]
+        d_score = collection.find_one({"userid":f"{userid}"},{"score":1,"_id":0})
+        new_score = d_score['score'] + point
+        collection.update_one(filter={"userid":f"{userid}"},update={"$set":{"score":new_score}}) #userid
+        return  jsonify({"data":"updated"}), 201
+    except Exception as e:
+        error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
+        print(error_mssg)
+        return error_mssg
+    finally:
+        if client:
+            client.close()
+
+@app.route('/progress/<string:organ>/<string:area>',methods=['POST'])
+def set_map(organ:str,area:str):
+    username = request.args.get("username")
+    client = None
+    try:
+        url = os.getenv('MONGO_URL')
+        if not url:
+            return jsonify({"error": "NO URL FOUND"}), 500
+        client = MongoClient(url, server_api=pymongo.server_api.ServerApi(
+            version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["user_data"]
+        collection.update_one(filter={"username":username},update={"$set":{f"map.{organ}.area_progress.{area}":True}})
         return " ", 204
     except Exception as e:
         error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
@@ -112,5 +148,10 @@ def insertdocs(username:str,age:int):
         if client:
             client.close()
 
+
 def userIdGen():
     return uuid.uuid4().hex[:12]
+
+
+if __name__ == "__main__" :
+    app.run(debug=True)
