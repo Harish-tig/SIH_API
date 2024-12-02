@@ -2,6 +2,7 @@ from flask import Flask,request,jsonify
 import pymongo, os
 from pymongo import MongoClient,server_api
 import uuid
+from function import userIdGen
 
 app = Flask(__name__)
 
@@ -172,8 +173,7 @@ def set_map():
             client.close()
 
 
-def userIdGen():
-    return uuid.uuid4().hex[:12]
+
 
 
 if __name__ == "__main__" :
