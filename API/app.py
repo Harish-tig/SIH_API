@@ -215,6 +215,33 @@ def leaderboard():
 
 
 
+@app.route("/dialogue",methods=["GET"])
+def dialogue():
+    request_data = request.get_json() # {"area":"base_map"}
+    if "area" not in request_data:
+        return jsonify({"Error: invalid parameters or userid invalid"}), 400
+    client = None
+    try:
+        url = os.getenv("MONGO_URL")
+        if not url:
+            return jsonify({"error": "NO URL FOUND"}), 400
+        client = MongoClient(url, server_api=pymongo.server_api.ServerApi(
+            version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["base_map_dialogue"]
+        data = collection.find({request_data["area"]:"Object"})
+        return jsonify(data), 200
+    except Exception as e:
+        error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
+        print(error_mssg)
+        return error_mssg
+    finally:
+        if client:
+            client.close()
+
+
+
+
 if __name__ == "__main__" :
     app.run(debug=True)
 
