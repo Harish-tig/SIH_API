@@ -59,7 +59,7 @@ def insertdocs():
     docs = {
         "username": username,
         "age": age,
-        "userid": userIdGen(), #works well
+        "userid": None, #works well
         "score": 0,
         "ex_prog": 0,  # (completed/target)*100 in percentage %
         "leg_prog": 0,
@@ -112,9 +112,11 @@ def insertdocs():
             version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
         collection = database["user_data"]
+        str = userIdGen()
         collection.insert_one(docs)
+
         print("dataSucessfully inserted!!")
-        return jsonify({"data":"inserted"}), 201
+        return jsonify({"userid":docs["userid"]}), 201
     except Exception as e:
         error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
         print(error_mssg)
