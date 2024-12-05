@@ -59,7 +59,7 @@ def insertdocs():
     docs = {
         "username": username,
         "age": age,
-        "userid": None, #works well
+        "userid": userIdGen(), #works well
         "score": 0,
         "ex_prog": 0,  # (completed/target)*100 in percentage %
         "leg_prog": 0,
