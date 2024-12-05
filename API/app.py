@@ -218,6 +218,7 @@ def leaderboard():
 @app.route("/dialogue",methods=["GET"])
 def dialogue():
     request_data = request.get_json() # {"area":"base_map"}
+    demand = request_data["area"]
     if "area" not in request_data:
         return jsonify({"Error: invalid parameters or userid invalid"}), 400
     client = None
@@ -229,7 +230,7 @@ def dialogue():
             version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
         collection = database["base_map_dialogue"]
-        data = collection.find({request_data["area"]:"Object"})
+        data = collection.find({"area":demand})
         return jsonify(data), 200
     except Exception as e:
         error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
