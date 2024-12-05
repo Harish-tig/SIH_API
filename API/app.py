@@ -213,34 +213,36 @@ def leaderboard():
             client.close()
 
 
-
-
-@app.route("/dialogue",methods=["GET"])
+@app.route("/dialogue", methods=["GET"])
 def dialogue():
-    request_data = request.get_json() # {"area":"base_map"}
-    demand = request_data["area"]
+    request_data = request.get_json()  # {"area": "base_map"}
+    # Check if 'area' is in request data
     if "area" not in request_data:
-        return jsonify({"Error: invalid parameters or userid invalid"}), 400
+        return jsonify({"error": "Invalid parameters or user ID invalid"}), 400
+    demand = request_data["area"]
     client = None
     try:
         url = os.getenv("MONGO_URL")
         if not url:
-            return jsonify({"error": "NO URL FOUND"}), 400
-        client = MongoClient(url, server_api=pymongo.server_api.ServerApi(
-            version="1", strict=True, deprecation_errors=True))
+            return jsonify({"error": "No MongoDB URL found"}), 400
+        client = MongoClient(url,
+                             server_api=pymongo.server_api.
+                             ServerApi(version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
         collection = database["base_map_dialogue"]
-        data = collection.find({"area":demand})
-        return jsonify(data), 200
+        # Query the collection for the specified 'area' and include the 'base_map'
+        data_cursor = collection.find({"area": demand}, {"base_map": 1,"_id":0})
+        data = list(data_cursor)
+        return jsonify(data[0]),200
     except Exception as e:
-        error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
-        print(error_mssg)
-        return error_mssg
+        # Handle unexpected errors
+        error_message = f"Some unexpected error occurred: {e}"
+        print(error_message)  # Print error message for debugging purposes
+        return jsonify({"error": error_message}), 500
     finally:
+        # Close the MongoDB client
         if client:
             client.close()
-
-
 
 
 if __name__ == "__main__" :
