@@ -213,6 +213,7 @@ def leaderboard():
             client.close()
 
 
+
 @app.route("/dialogue", methods=["GET"])
 def dialogue():
     request_data = request.get_json()  # {"area": "base_map"}
@@ -245,28 +246,11 @@ def dialogue():
             client.close()
 
 
+@app.route("/j")
+def foo():
+    pass
+
+
 if __name__ == "__main__" :
     app.run(debug=True)
 
-
-
-
-
-
-#
-# //{
-# //  "map": {
-# //    "executive": {
-# //      "area_progress": {
-# //        "ex_a1": "False",
-# //        "ex_a2": "False",
-# //        "ex_a3": "False",
-# //        "ex_a4": "False"
-# //      },
-
-# //
-# //
-# //
-# //    }
-# //  }
-# //},
