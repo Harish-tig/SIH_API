@@ -2,6 +2,7 @@ from flask import Flask,request,jsonify
 import pymongo, os
 from pymongo import MongoClient,server_api
 from function import userIdGen
+from random import shuffle
 
 app = Flask(__name__)
 
@@ -244,6 +245,47 @@ def dialogue():
         # Close the MongoDB client
         if client:
             client.close()
+
+
+@app.route("/quiz",methods=["GET"])
+def quiz():
+    requested_data = request.get_json() #request {"area":"ex","test":"quiz_ex_1"}
+    if "area" not in requested_data or "test" not in requested_data:
+        return jsonify({"error": "Invalid parameters"}), 400
+    client = None
+    try:
+        url = os.getenv("MONGO_URL")
+        if not url:
+            return jsonify({"error": "No MongoDB URL found"}), 400
+        client = MongoClient(url,
+                             server_api=pymongo.server_api.
+                             ServerApi(version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["quiz"]
+        data_cursor = collection.find({"area": requested_data["area"]},
+                                      {"_id": 0, "area": 0}).to_list()[0] ##only one element
+
+        data = data_cursor[requested_data["test"]]
+        
+        for each_question in data:
+            shuffle(each_question["options"])
+
+        return jsonify({"data":data}), 200
+    except Exception as e:
+        # Handle unexpected errors
+        error_message = f"Some unexpected error occurred: {e}"
+        print(error_message)  # Print error message for debugging purposes
+        return jsonify({"error": error_message}), 500
+    finally:
+        # Close the MongoDB client
+        if client:
+            client.close()
+
+
+
+
+
+
 
 
 @app.route("/j")
