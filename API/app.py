@@ -262,11 +262,11 @@ def quiz():
                              ServerApi(version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
         collection = database["quiz"]
-        data_cursor = collection.find({"area": requested_data["area"]},
-                                      {"_id": 0, "area": 0}).to_list()[0] ##only one element
+        data_cursor = list(collection.find({"area": requested_data["area"]},
+                                      {"_id": 0, "area": 0}))[0] ##only one element
 
         data = data_cursor[requested_data["test"]]
-        
+        print(data)
         for each_question in data:
             shuffle(each_question["options"])
 
