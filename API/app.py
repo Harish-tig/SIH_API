@@ -3,8 +3,18 @@ import pymongo, os
 from pymongo import MongoClient,server_api
 from function import userIdGen
 from random import shuffle
+import random
 
 app = Flask(__name__)
+
+#todo:
+'''
+reading material ka api.
+fetching tip of the day api ✅
+card api
+article progress update api
+progress api
+'''
 
 @app.route('/')
 def hello():
@@ -159,6 +169,7 @@ def update_score():
         if client:
             client.close()
 
+
 @app.route('/progress',methods=['POST'])
 def set_map():
     '''
@@ -212,7 +223,6 @@ def leaderboard():
     finally:
         if client:
             client.close()
-
 
 
 @app.route("/dialogue", methods=["GET"])
@@ -282,17 +292,31 @@ def quiz():
             client.close()
 
 
-
-
-
-
-
-
-@app.route("/j")
-def foo():
-    pass
+@app.route("/fact",methods=['GET'])
+def fact():
+    client = None
+    try:
+        url = os.getenv("MONGO_URL")
+        if not url:
+            return jsonify({"error": "No MongoDB URL found"}), 400
+        client = MongoClient(url,
+                             server_api=pymongo.server_api.
+                             ServerApi(version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["fact"]
+        data = list(collection.find({'Doc': "facts"}, {"_id": 0, "facts": 1}))[0]
+        index = random.randint(0, (len(data['facts'])-1))
+        return jsonify({'data':data['facts'][index]}), 200
+    except Exception as e:
+        # Handle unexpected errors
+        error_message = f"Some unexpected error occurred: {e}"
+        print(error_message)  # Print error message for debugging purposes
+        return jsonify({"error": error_message}), 500
+    finally:
+        # Close the MongoDB client
+        if client:
+            client.close()
 
 
 if __name__ == "__main__" :
     app.run(debug=True)
-
