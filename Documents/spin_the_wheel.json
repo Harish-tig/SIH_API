@@ -1,0 +1,25 @@
+{
+  "area": "ex",
+  "spin_ex_2": [
+    {
+      "question": "How is the Vice-President elected?",
+      "options": ["By Members of Legislative Assemblies", "By an Electoral College of MPs", "By citizens directly", "By the Rajya Sabha only"],
+      "answer": "By an Electoral College of MPs"
+    },
+    {
+      "question": "Which body resolves disputes regarding the election of the President?",
+      "options": ["Election Commission", "Lok Sabha", "Supreme Court", "Rajya Sabha"],
+      "answer": "Supreme Court"
+    },
+    {
+      "question": "What special power does the President hold under Article 72?",
+      "options": ["Declare a state of emergency", "Grant pardons for offenses", "Dissolve Parliament", "Appoint Governors"],
+      "answer": "Grant pardons for offenses"
+    },
+    {
+      "question": "What is the term length for the Vice-President?",
+      "options": ["4 years", "5 years", "6 years", "7 years"],
+      "answer": "5 years"
+    }
+  ]
+}

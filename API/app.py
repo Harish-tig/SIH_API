@@ -11,9 +11,9 @@ app = Flask(__name__)
 '''
 reading material ka api.
 fetching tip of the day api ✅
-card api
-article progress update api
-progress api
+card api ✅
+article progress update api ✅
+progress api ✅
 '''
 
 @app.route('/')
@@ -61,6 +61,7 @@ def insertdocs():
     #take username and age as param and assign a userid.
     # henceforth user id shall be used to filtera and update data.
     # username, age
+    #todo -- > change something
     '''
     requested_data = request.get_json()
     if "username" not in requested_data or  "age" not in requested_data:
@@ -72,42 +73,42 @@ def insertdocs():
         "age": age,
         "userid": userIdGen(), #works well
         "score": 0,
-        "ex_prog": 0,  # (completed/target)*100 in percentage %
-        "leg_prog": 0,
-        "jd_prog": 0,
         "map": {
             "executive": {
+                "progress": 0,
                 "area_progress":{
-                 "ex_a1": False, #convert to nested dict
+                 "ex_a1": False,
                  "ex_a2": False,
                  "ex_a3": False,
                  "ex_a4": False
                 },
-                "ex_article_progress": {
+                "article_progress": {
                     "completed": 0,
                     "target": 42
                 }
             },
             "legislative": {
+                "progress": 0,
                 "area_progress":{
                  "lg_a1": False,
                  "lg_a2": False,
                  "lg_a3": False,
                  "lg_a4": False
                  },
-            "leg_atricle_progress": {
+            "article_progress": {
                     "completed": 0,
                     "target": 89
                 }
             },
             "judiciary": {
+                "progress": 0,
                 "area_progress":{
                  "jd_a1": False,
                  "jd_a2": False,
                  "jd_a3": False,
                  "jd_a4": False
                 },
-                "jd_article_progress": {
+                "article_progress": {
                     "completed": 0,
                     "target": 48
                 }
@@ -123,7 +124,6 @@ def insertdocs():
             version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
         collection = database["user_data"]
-        str = userIdGen()
         collection.insert_one(docs)
 
         print("dataSucessfully inserted!!")
@@ -141,12 +141,12 @@ def insertdocs():
 def update_score():
     '''
     updates the user score
-    expects {user_id,score}
+    expects {userid,score}
     '''
     requested_data = request.get_json() #expects a json with userid and score in it. a score to be added
-    if not requested_data or "user_id" not in requested_data or "score" not in requested_data:
+    if not requested_data or "userid" not in requested_data or "score" not in requested_data:
         return jsonify({"Error: invalid parameters or userid invalid"}), 400
-    userid = requested_data['user_id'] #todo: update to userid from user_id
+    userid = requested_data['userid'] #todo: update to userid from user_id
     point = requested_data['score']
     client = None
     try:
@@ -213,7 +213,7 @@ def leaderboard():
         database = client["constitution"]
         collection = database["user_data"]
         lead_board = list(collection.
-                      find({},{'_id':0,"username":1,"userid":1,"score":1})
+                      find({},{'_id':0,"username":1,"score":1})
                       .sort([("score", -1)]).limit(3))
         return jsonify({"leaderboard": lead_board}), 200
     except Exception as e:
@@ -231,7 +231,7 @@ def dialogue():
     # Check if 'area' is in request data
     if "area" not in request_data:
         return jsonify({"error": "Invalid parameters or user ID invalid"}), 400
-    demand = request_data["area"]
+    area = request_data["area"]
     client = None
     try:
         url = os.getenv("MONGO_URL")
@@ -243,7 +243,7 @@ def dialogue():
         database = client["constitution"]
         collection = database["base_map_dialogue"]
         # Query the collection for the specified 'area' and include the 'base_map'
-        data_cursor = collection.find({"area": demand}, {"base_map": 1,"_id":0})
+        data_cursor = collection.find({"area": area}, {"base_map": 1,"_id":0})
         data = list(data_cursor)
         return jsonify(data[0]),200
     except Exception as e:
@@ -257,11 +257,14 @@ def dialogue():
             client.close()
 
 
-@app.route("/quiz",methods=["GET"])
-def quiz():
-    requested_data = request.get_json() #request {"area":"ex","test":"quiz_ex_1"}
-    if "area" not in requested_data or "test" not in requested_data:
+@app.route("/minigame",methods=["GET"])
+def minigame():
+    requested_data = request.get_json() #request {"collection":"card,quiz,hall_meeting","area":"ex","test":"quiz_ex_1"}
+    if "area" not in requested_data or "test" not in requested_data or "collection" not in requested_data:
         return jsonify({"error": "Invalid parameters"}), 400
+    area = requested_data["area"]
+    test = requested_data["test"]
+    collection = requested_data["collection"]
     client = None
     try:
         url = os.getenv("MONGO_URL")
@@ -271,11 +274,11 @@ def quiz():
                              server_api=pymongo.server_api.
                              ServerApi(version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
-        collection = database["quiz"]
-        data_cursor = list(collection.find({"area": requested_data["area"]},
+        collection = database[collection]
+        data_cursor = list(collection.find({"area": area},
                                       {"_id": 0, "area": 0}))[0] ##only one element
 
-        data = data_cursor[requested_data["test"]]
+        data = data_cursor[test]
         print(data)
         for each_question in data:
             shuffle(each_question["options"])
@@ -316,6 +319,51 @@ def fact():
         # Close the MongoDB client
         if client:
             client.close()
+
+
+@app.route("/updateprogress",methods= ["POST"])
+def updateprogress(): #{"userid":"something","map":"executive","progress":int}
+
+    requested_data = request.get_json()
+
+    if "userid" not in requested_data or "map" not in requested_data or "progress" not in requested_data:
+        return jsonify({"Error: invalid parameters or empty data sent"}), 400
+
+    userid = requested_data['userid']
+    map = requested_data['map']
+    progress = requested_data["progress"]
+    if not isinstance(progress, int):
+        return jsonify({"error": "Integer value expected for progress"}), 400
+
+    client = None
+    try:
+        url = os.getenv("MONGO_URL")
+        if not url:
+            return jsonify({"error": "No MongoDB URL found"}), 400
+        client = MongoClient(url,
+                             server_api=pymongo.server_api.
+                             ServerApi(version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["user_data"]
+
+        collection.update_one({"userid": userid},
+                              update={"$set": {f"map.{map}.article_progress.completed":progress}})
+        data = collection.find_one({"userid": userid}, {"map": 1, "_id": 0, })
+        completed = data['map'][map]["article_progress"]["completed"]
+        target = data['map'][map]["article_progress"]["target"]
+        collection.update_one({"userid": userid},update={"$set":{f"map.{map}.progress": round((completed / target) * 100)}})
+        return " ", 204
+
+    except Exception as e:
+        # Handle unexpected errors
+        error_message = f"Some unexpected error occurred: {e}"
+        print(error_message)  # Print error message for debugging purposes
+        return jsonify({"error": error_message}), 500
+    finally:
+        # Close the MongoDB client
+        if client:
+            client.close()
+
 
 
 if __name__ == "__main__" :

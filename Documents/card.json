@@ -1,0 +1,114 @@
+{
+  "area": "ex",
+  "card_ex_1": [
+    {
+      "question": "Who elects the President of India?",
+      "options": [
+        "Members of an Electoral College",
+        "Citizens directly",
+        "Elected members of State Legislative Assemblies",
+        "Judges of the Supreme Court"
+      ],
+      "answer": [
+        "Members of an Electoral College",
+        "Elected members of State Legislative Assemblies"
+      ]
+    },
+    {
+      "question": "What are the qualifications required to be elected as the President?",
+      "options": [
+        "Must be a citizen of India",
+        "Must be at least 30 years old",
+        "Must not hold any office of profit",
+        "Must be qualified for election as a Member of Parliament"
+      ],
+      "answer": [
+        "Must be a citizen of India",
+        "Must be qualified for election as a Member of Parliament"
+      ]
+    },
+    {
+      "question": "What ensures uniformity in the Presidential election process?",
+      "options": [
+        "Value of votes proportional to the population of the states",
+        "Proportional representation by a single transferable vote",
+        "Equal votes for all MPs and MLAs",
+        "Secret ballot voting"
+      ],
+      "answer": [
+        "Value of votes proportional to the population of the states",
+        "Proportional representation by a single transferable vote"
+      ]
+    },
+    {
+      "question": "What happens if the office of the President becomes vacant?",
+      "options": [
+        "The Vice-President acts as the President",
+        "Elections must be held within 6 months",
+        "The Chief Justice of India takes over temporarily",
+        "The Prime Minister assumes the President’s role"
+      ],
+      "answer": [
+        "The Vice-President acts as the President",
+        "Elections must be held within 6 months"
+      ]
+    }
+  ],
+  "card_ex_3": [
+    {
+      "question": "What does Article 153 of the Constitution of India deal with?",
+      "options": [
+        "Appointment of Governors for States",
+        "Term of office of the President of India",
+        "Distribution of executive powers in States",
+        "Provision of one Governor for each state"
+      ],
+      "answer": [
+        "Appointment of Governors for States",
+        "Provision of one Governor for each state"
+      ]
+    },
+    {
+      "question": "What does Article 154 of the Constitution of India establish?",
+      "options": [
+        "Executive power is vested in the Governor",
+        "The President can override the Governor’s decisions",
+        "Governors have executive powers over laws and policies",
+        "The Governor’s executive powers are subject to the President’s discretion"
+      ],
+      "answer": [
+        "Executive power is vested in the Governor",
+        "Governors have executive powers over laws and policies"
+      ]
+    },
+    {
+      "question": "Who appoints the Governor of a State according to Article 155?",
+      "options": [
+        "The President of India",
+        "The Chief Justice of India",
+        "The Parliament of India",
+        "The Prime Minister of India"
+      ],
+      "answer": [
+        "The President of India",
+        "The Prime Minister of India"
+      ]
+    },
+    {
+      "question": "How long does a Governor hold office according to Article 156?",
+      "options": [
+        "5 years from the date of appointment",
+        "Indefinite term unless removed",
+        "Until the President of India decides",
+        "As long as the state government remains in power"
+      ],
+      "answer": [
+        "5 years from the date of appointment",
+        "Indefinite term unless removed"
+      ]
+    }
+  ]
+}
+
+
+

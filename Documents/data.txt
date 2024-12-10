@@ -1,0 +1,47 @@
+{
+        "username": username,
+        "age": age,
+        "userid": userIdGen(), #works well
+        "score": 0,
+        "map": {
+            "executive": {
+                "progress": 0,
+                "area_progress":{
+                 "ex_a1": False,
+                 "ex_a2": False,
+                 "ex_a3": False,
+                 "ex_a4": False
+                },
+                "article_progress": {
+                    "completed": 0,
+                    "target": 42
+                }
+            },
+            "legislative": {
+                "progress": 0,
+                "area_progress":{
+                 "lg_a1": False,
+                 "lg_a2": False,
+                 "lg_a3": False,
+                 "lg_a4": False
+                 },
+            "article_progress": {
+                    "completed": 0,
+                    "target": 89
+                }
+            },
+            "judiciary": {
+                "progress": 0,
+                "area_progress":{
+                 "jd_a1": False,
+                 "jd_a2": False,
+                 "jd_a3": False,
+                 "jd_a4": False
+                },
+                "article_progress": {
+                    "completed": 0,
+                    "target": 48
+                }
+            }
+        }
+    }

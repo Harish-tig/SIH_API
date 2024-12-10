@@ -1,0 +1,45 @@
+{
+  "area": "ex",
+  "hall_meeting": [
+    {
+      "question": "What power does the Governor have under Article 161?",
+      "options": [
+        "Enact laws in the state legislature",
+        "Grant pardons for offenses against state law",
+        "Dissolve the Council of Ministers",
+        "Pass state budgets"
+      ],
+      "answer": ["Grant pardons for offenses against state law"]
+    },
+    {
+      "question": "Who advises the Governor in performing their duties?",
+      "options": [
+        "President",
+        "Council of Ministers",
+        "Attorney-General",
+        "State Legislature"
+      ],
+      "answer": ["Council of Ministers"]
+    },
+    {
+      "question": "Who appoints the Chief Minister of a state?",
+      "options": [
+        "The President of India",
+        "The Speaker of the State Legislative Assembly",
+        "The Governor of the state",
+        "The Prime Minister of India"
+      ],
+      "answer": ["The Governor of the state"]
+    },
+    {
+      "question": "What does collective responsibility of ministers mean?",
+      "options": [
+        "All ministers must work in unison with the judiciary",
+        "Ministers are responsible for decisions made in the State Legislature",
+        "Ministers are collectively accountable to the State Legislature",
+        "Ministers must follow the Chief Minister’s orders without question"
+      ],
+      "answer": ["Ministers are collectively accountable to the State Legislature"]
+    }
+  ]
+}

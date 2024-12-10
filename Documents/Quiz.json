@@ -1,0 +1,151 @@
+{
+  "area": "ex",
+  "quiz_ex_1": [
+    {
+      "question": "What is the President prohibited from doing while in office?",
+      "options": [
+        "Running for re-election",
+        "Holding any office of profit",
+        "Resigning before their term ends",
+        "Presiding over Parliament sessions"
+      ],
+      "answer": ["Holding any office of profit"]
+    },
+    {
+      "question": "What majority is required for impeachment of the President?",
+      "options": [
+        "Simple majority",
+        "Two-thirds majority in both Houses of Parliament",
+        "Absolute majority in Lok Sabha",
+        "Three-fourths majority in Rajya Sabha"
+      ],
+      "answer": ["Two-thirds majority in both Houses of Parliament"]
+    },
+    {
+      "question": "Who acts as President when the position is vacant?",
+      "options": [
+        "Prime Minister",
+        "Vice-President",
+        "Chief Justice of India",
+        "Governor of the largest state"
+      ],
+      "answer": ["Vice-President"]
+    },
+    {
+      "question": "What is the Vice-President’s primary role in Parliament?",
+      "options": [
+        "Preside over the Rajya Sabha",
+        "Advise the Prime Minister",
+        "Appoint the President",
+        "Propose state laws"
+      ],
+      "answer": ["Preside over the Rajya Sabha"]
+    }
+  ],
+  "quiz_ex_2": [
+    {
+      "question": "What does Article 73 define about the Union executive powers?",
+      "options": [
+        "They are limited to matters in the Concurrent List only.",
+        "They extend to matters on which Parliament can legislate.",
+        "They are subordinate to the powers of the State executive.",
+        "They can only be exercised during emergencies."
+      ],
+      "answer": ["They extend to matters on which Parliament can legislate."]
+    },
+    {
+      "question": "What is the role of the Attorney-General of India?",
+      "options": [
+        "Represents India in the United Nations",
+        "Heads the judiciary",
+        "Acts as the chief legal advisor to the Government of India",
+        "Presides over the Lok Sabha"
+      ],
+      "answer": ["Acts as the chief legal advisor to the Government of India"]
+    },
+    {
+      "question": "Who appoints the Prime Minister of India?",
+      "options": [
+        "The Lok Sabha",
+        "The President of India",
+        "The Chief Justice of India",
+        "The Attorney-General of India"
+      ],
+      "answer": ["The President of India"]
+    },
+    {
+      "question": "What is the primary duty of the Prime Minister under Article 78?",
+      "options": [
+        "To preside over all sessions of the Parliament",
+        "To communicate decisions of the Council of Ministers to the President",
+        "To appoint the Attorney-General of India",
+        "To oversee the judiciary"
+      ],
+      "answer": ["To communicate decisions of the Council of Ministers to the President"]
+    }
+  ],
+  "quiz_ex_3": [
+    {
+      "question": "What is the minimum age required to become a Governor?",
+      "options": [
+        "30 years",
+        "35 years",
+        "40 years",
+        "25 years"
+      ],
+      "answer": ["35 years"]
+    },
+    {
+      "question": "What must a Governor do before assuming office?",
+      "options": [
+        "Sign an affidavit",
+        "Take an oath to preserve the Constitution",
+        "Submit a resignation from their previous post",
+        "Seek approval from the Chief Minister"
+      ],
+      "answer": ["Take an oath to preserve the Constitution"]
+    },
+    {
+      "question": "Who decides how the Governor’s duties will be discharged in their absence?",
+      "options": [
+        "Prime Minister",
+        "President",
+        "Chief Justice of India",
+        "State Legislature"
+      ],
+      "answer": ["President"]
+    },
+    {
+      "question": "Which of the following is prohibited for a Governor while in office?",
+      "options": [
+        "Holding another office of profit",
+        "Contesting elections in their state",
+        "Giving speeches in the Legislative Assembly",
+        "Resigning before their term ends"
+      ],
+      "answer": ["Holding another office of profit"]
+    }
+  ],
+  "quiz_ex_4": [
+    {
+      "question": "Who is the chief legal advisor to the state government?",
+      "options": [
+        "Attorney-General",
+        "Advocate-General",
+        "Chief Justice of the High Court",
+        "Solicitor-General"
+      ],
+      "answer": ["Advocate-General"]
+    },
+    {
+      "question": "Under whose name are the state government’s executive actions taken?",
+      "options": [
+        "Chief Minister",
+        "President",
+        "Governor",
+        "Advocate-General"
+      ],
+      "answer": ["Governor"]
+    }
+  ]
+}
