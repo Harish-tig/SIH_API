@@ -1,0 +1,133 @@
+{
+  "area": "base_map",
+  "base_map": {
+    "guard": [
+      {
+        "character": "Adhyaksh",
+        "dialogue": "Welcome, traveler! I’ve been eagerly waiting for you. My name is Adhyaksh, and I am the Guardian of this hub—Unity HQ. And you are?"
+      },
+      {
+        "character": "user",
+        "dialogue": "My name is [Player's Name]."
+      },
+      {
+        "character": "Adhyaksh",
+        "dialogue": "[Player's Name]! A fine name for someone ready to embark on this journey of exploration and knowledge. Here at Unity HQ, you’ll keep track of everything—your progress, rewards, and achievements. Pretty exciting, isn’t it?"
+      },
+      {
+        "character": "Adhyaksh",
+        "dialogue": "Come closer. Let me show you the paths ahead."
+      },
+      {
+        "character": "user",
+        "dialogue": "Wow, this place is huge! Where do I start?"
+      },
+      {
+        "character": "Adhyaksh",
+        "dialogue": "Ah, don’t worry, [Player's Name]. You’re about to see it all! First, let’s look at Law Junction—this is where laws are created, debated, and passed. It’s all about understanding the Legislature, how rules are formed to guide society. You’ll get to see how the Parliament works, and even how the State Assemblies govern at a local level."
+      },
+      {
+        "character": "Adhyaksh",
+        "dialogue": "Next, over there is Admin Arena, where decisions turn into actions. This is where the Executive comes into play. Presidents, Governors, and Ministers—they are the ones running the show, ensuring the laws are carried out and everything functions smoothly."
+      },
+      {
+        "character": "Adhyaksh",
+        "dialogue": "And lastly, there’s Verdict Valley—the land of justice! This is where Judiciary makes sure the laws are applied fairly. From the Supreme Court to the local courts, this is where justice prevails and disputes are resolved."
+      },
+      {
+        "character": "Adhyaksh",
+        "dialogue": "Now, enough from me. Go ahead and meet the Guardians of each of these realms. They’ll guide you on your journey. Choose your path and let the adventure begin!"
+      }
+    ],
+    "npc_1": [
+      {
+        "character": "Vidhaan",
+        "dialogue": "Greetings, [Player's Name]! I am Vidhaan, the Guardian of Law Junction—the place where laws come to life. You’ve come to the right place if you’re curious about how rules shape our world!"
+      },
+      {
+        "character": "user",
+        "dialogue": "Wow, so this is where laws are made? That sounds pretty important!"
+      },
+      {
+        "character": "Vidhaan",
+        "dialogue": "It sure is! Here in Law Junction, we talk about how the Legislature works—how Parliament debates laws and how decisions are made that affect the whole country. It’s all about discussions, teamwork, and making sure that every voice is heard."
+      },
+      {
+        "character": "user",
+        "dialogue": "Do state assemblies also play a role in making laws?"
+      },
+      {
+        "character": "Vidhaan",
+        "dialogue": "Absolutely! It’s not just the Parliament, but also State Assemblies that play an important role. They make decisions for the local areas, handling matters that directly impact your everyday life. It’s a critical part of governance!"
+      },
+      {
+        "character": "user",
+        "dialogue": "So, if I wanted to understand lawmaking better, this is the place to be?"
+      },
+      {
+        "character": "Vidhaan",
+        "dialogue": "Indeed! If you’re ready to learn more about how laws are crafted, debated, and passed, Law Junction is the perfect place for you. Ready to dive in?"
+      }
+    ],
+    "npc_2": [
+      {
+        "character": "Aadeshak",
+        "dialogue": "Hello, [Player's Name]. I am Aadeshak, the Guardian of Admin Arena—the zone of action and governance."
+      },
+      {
+        "character": "user",
+        "dialogue": "This place looks really busy! What happens here?"
+      },
+      {
+        "character": "Aadeshak",
+        "dialogue": "Ah, yes! Admin Arena is where the Executive takes charge. From the President to Governors, they ensure that laws are implemented and everything runs smoothly across the country. They are the ones who take action, making sure decisions made in Law Junction are carried out in the real world."
+      },
+      {
+        "character": "user",
+        "dialogue": "So, it’s all about leadership and executing plans?"
+      },
+      {
+        "character": "Aadeshak",
+        "dialogue": "Exactly! Whether it’s policies, government programs, or the everyday running of our nation, it all happens here. It’s a place of immense responsibility, where decisions impact millions."
+      },
+      {
+        "character": "user",
+        "dialogue": "How can I learn more about governance and decision-making here?"
+      },
+      {
+        "character": "Aadeshak",
+        "dialogue": "In Admin Arena, observe the leaders in action. Watch how decisions are made, how plans are turned into reality, and how leaders ensure that the people’s needs are met. It’s a world of power, responsibility, and governance!"
+      }
+    ],
+    "npc_3": [
+      {
+        "character": "Nyayadhish",
+        "dialogue": "Ah, [Player's Name], welcome. I am Nyayadhish, the Guardian of Verdict Valley, the land of justice and fairness."
+      },
+      {
+        "character": "user",
+        "dialogue": "Justice, huh? That sounds like something I want to learn more about."
+      },
+      {
+        "character": "Nyayadhish",
+        "dialogue": "You’ve come to the right place. In Verdict Valley, you’ll discover how the Judiciary protects rights and ensures fairness. It’s all about making sure everyone is treated equally, no matter their background or position."
+      },
+      {
+        "character": "user",
+        "dialogue": "So, the Judiciary ensures fairness for everyone?"
+      },
+      {
+        "character": "Nyayadhish",
+        "dialogue": "Exactly! From the Supreme Court to the local courts, this is where the balance of justice is maintained. When disputes arise or when rights are threatened, the Judiciary steps in to make sure justice prevails."
+      },
+      {
+        "character": "user",
+        "dialogue": "How do I get involved or learn more about the cases and the decision-making process?"
+      },
+      {
+        "character": "Nyayadhish",
+        "dialogue": "Observe the proceedings, listen to the arguments, and reflect on the decisions made. This is where fairness and justice are not just concepts—they are lived and enforced."
+      }
+    ]
+  }
+}
