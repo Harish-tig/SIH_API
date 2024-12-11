@@ -4,6 +4,7 @@ from pymongo import MongoClient,server_api
 from function import userIdGen
 from random import shuffle
 import random
+import pprint
 
 app = Flask(__name__)
 
@@ -14,6 +15,7 @@ fetching tip of the day api ✅
 card api ✅
 article progress update api ✅
 progress api ✅
+language translation api
 '''
 
 @app.route('/')
@@ -68,6 +70,7 @@ def insertdocs():
         return jsonify({"Error: invalid parameters or usename invalid"}), 400
     username = requested_data["username"]
     age = requested_data["age"]
+    #todo: add test data to the database to unlock new area (imp)
     docs = {
         "username": username,
         "age": age,
@@ -353,6 +356,42 @@ def updateprogress(): #{"userid":"something","map":"executive","progress":int}
         target = data['map'][map]["article_progress"]["target"]
         collection.update_one({"userid": userid},update={"$set":{f"map.{map}.progress": round((completed / target) * 100)}})
         return " ", 204
+
+    except Exception as e:
+        # Handle unexpected errors
+        error_message = f"Some unexpected error occurred: {e}"
+        print(error_message)  # Print error message for debugging purposes
+        return jsonify({"error": error_message}), 500
+    finally:
+        # Close the MongoDB client
+        if client:
+            client.close()
+
+
+@app.route("/reading_material",methods=["GET"])
+def reading_material():
+    requested_data = request.get_json()
+    #takes some parameter. {"area":"ex", "map" : "ex_a1"}
+
+    if "area" not in requested_data or "map" not in requested_data:
+        return jsonify({"Error: invalid parameters or empty data sent"}), 400
+
+    area = requested_data["area"]
+    map = requested_data["map"]
+
+    client = None
+    try:
+        url = os.getenv("MONGO_URL")
+        if not url:
+            return jsonify({"error": "No MongoDB URL found"}), 400
+        client = MongoClient(url,
+                             server_api=pymongo.server_api.
+                             ServerApi(version="1", strict=True, deprecation_errors=True))
+        database = client["constitution"]
+        collection = database["reading_material"]
+        data = list(collection.find({"area":area}, {map:1,"_id":0}))
+
+        return jsonify(data[0]), 200
 
     except Exception as e:
         # Handle unexpected errors

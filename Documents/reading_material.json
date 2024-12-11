@@ -1,174 +1,223 @@
 {
-  "area": "ex",
-  "ex_a1": {
-    "kisanpur": {
-      "reading_material_1": [
-        {
-          "article_number": 52,
-          "summary": "The President of India is the head of the country. This article says that there will always be a President in India."
-        },
-        {
-          "article_number": 53,
-          "summary": "The President has the power to run the government. This includes controlling the military and making decisions through other officials. The article also makes sure that the President doesn't take away powers from other government bodies."
-        },
-        {
-          "article_number": 54,
-          "summary": "The President is chosen by members of Parliament and State Assemblies. These are the people who will vote for the new President."
-        }
-      ],
-      "reading_material_2": [
-        {
-          "article_number": 55,
-          "summary": "This article explains how votes are counted in the President's election. It ensures that each state and member gets a fair number of votes, based on the state's population."
-        },
-        {
-          "article_number": 56,
-          "summary": "The President serves for 5 years. They can resign or be removed if they break the law, but must stay in office until a new President is chosen."
-        }
-      ],
-      "reading_material_3": [
-        {
-          "article_number": 57,
-          "summary": "A person who has been President before can be elected again, if they follow the rules."
-        },
-        {
-          "article_number": 58,
-          "summary": "To be elected President, a person must be an Indian citizen, at least 35 years old, and qualified to be a member of the government. They cannot hold any other government job at the same time."
-        }
-      ]
+    "area": "ex",
+    "ex_a1": {
+        "reading_material_1": [
+            {
+                "article_number": 52,
+                "summary": "The President of India is the head of the country. This article says that there will always be a President in India."
+            },
+            {
+                "article_number": 53,
+                "summary": "The President has the power to run the government. This includes controlling the military and making decisions through other officials. The article also makes sure that the President doesn't take away powers from other government bodies."
+            },
+            {
+                "article_number": 54,
+                "summary": "The President is chosen by members of Parliament and State Assemblies. These are the people who will vote for the new President."
+            }
+        ],
+        "reading_material_2": [
+            {
+                "article_number": 55,
+                "summary": "This article explains how votes are counted in the President's election. It ensures that each state and member gets a fair number of votes, based on the state's population."
+            },
+            {
+                "article_number": 56,
+                "summary": "The President serves for 5 years. They can resign or be removed if they break the law, but must stay in office until a new President is chosen."
+            }
+        ],
+        "reading_material_3": [
+            {
+                "article_number": 57,
+                "summary": "A person who has been President before can be elected again, if they follow the rules."
+            },
+            {
+                "article_number": 58,
+                "summary": "To be elected President, a person must be an Indian citizen, at least 35 years old, and qualified to be a member of the government. They cannot hold any other government job at the same time."
+            }
+        ],
+        "reading_material_4": [
+            {
+                "article_number": 59,
+                "summary": "The President can't hold another government job while in office. They get a residence and benefits, and their pay cannot be reduced while they serve."
+            },
+            {
+                "article_number": 60,
+                "summary": "Before becoming President, they take an oath to protect the Constitution and serve the people of India."
+            }
+        ],
+        "reading_material_5": [
+            {
+                "article_number": 61,
+                "summary": "The President can be removed from office (impeached) for breaking the Constitution. A serious process is followed, involving both Houses of Parliament, and a large majority is needed to pass a resolution for impeachment."
+            },
+            {
+                "article_number": 62,
+                "summary": "If the President's office becomes vacant, an election must be held quickly (within six months). The new President will serve a full five-year term."
+            },
+            {
+                "article_number": 63,
+                "summary": "India will also have a Vice-President, who works alongside the President."
+            }
+        ],
+        "reading_material_6": [
+            {
+                "article_number": 64,
+                "summary": "The Vice-President also serves as the Chairman of the Council of States, but cannot hold any other government job at the same time."
+            },
+            {
+                "article_number": 65,
+                "summary": "If the President is unable to perform their duties, the Vice-President will take over until the President returns or a new one is elected."
+            }
+        ]
     },
-    "Ashaval": {
-      "reading_material_1": [
-        {
-          "article_number": 59,
-          "summary": "The President can't hold another government job while in office. They get a residence and benefits, and their pay cannot be reduced while they serve."
-        },
-        {
-          "article_number": 60,
-          "summary": "Before becoming President, they take an oath to protect the Constitution and serve the people of India."
-        }
-      ],
-      "reading_material_2": [
-        {
-          "article_number": 61,
-          "summary": "The President can be removed from office (impeached) for breaking the Constitution. A serious process is followed, involving both Houses of Parliament, and a large majority is needed to pass a resolution for impeachment."
-        },
-        {
-          "article_number": 62,
-          "summary": "If the President's office becomes vacant, an election must be held quickly (within six months). The new President will serve a full five-year term."
-        },
-        {
-          "article_number": 63,
-          "summary": "India will also have a Vice-President, who works alongside the President."
-        }
-      ],
-      "reading_material_3": [
-        {
-          "article_number": 64,
-          "summary": "The Vice-President also serves as the Chairman of the Council of States, but cannot hold any other government job at the same time."
-        },
-        {
-          "article_number": 65,
-          "summary": "If the President is unable to perform their duties, the Vice-President will take over until the President returns or a new one is elected."
-        }
-      ]
-    }
-  },
-  "ex_a2": {
-    "West_Village": {
-      "reading_material_1": [
-        {
-          "article_number": 66,
-          "summary": "The Vice-President is elected by Parliament members and must be an Indian citizen over 35 years old. They cannot be a member of Parliament or hold another government job."
-        },
-        {
-          "article_number": 67,
-          "summary": "The Vice-President serves a five-year term. They can resign or be removed, but must stay in office until a new one is elected."
-        }
-      ],
-      "reading_material_2": [
-        {
-          "article_number": 68,
-          "summary": "If the Vice-President's office becomes vacant, an election will be held quickly. The new Vice-President will serve a full five-year term."
-        },
-        {
-          "article_number": 69,
-          "summary": "Before taking office, the Vice-President must swear an oath to support and follow the Constitution of India."
-        }
-      ],
-      "reading_material_3": [
-        {
-          "article_number": 70,
-          "summary": "Parliament can make rules for the President's duties in situations not covered by the Constitution."
-        },
-        {
-          "article_number": 71,
-          "summary": "Any disputes related to the election of the President or Vice-President are decided by the Supreme Court. If the election is declared invalid, prior actions by the President or Vice-President are not invalidated. Parliament can make laws regarding elections, and vacancies among electors cannot challenge the election results."
-        },
-        {
-          "article_number": 72,
-          "summary": "The President can grant pardons, reprieves, and reduce or change sentences, especially in death penalty cases, court martials, or matters under Union laws. This power does not override the Armed Forces or State Governors' powers in some cases."
-        }
-      ]
+    "ex_a2": {
+        "reading_material_1": [
+            {
+                "article_number": 66,
+                "summary": "The Vice-President is elected by Parliament members and must be an Indian citizen over 35 years old. They cannot be a member of Parliament or hold another government job."
+            },
+            {
+                "article_number": 67,
+                "summary": "The Vice-President serves a five-year term. They can resign or be removed, but must stay in office until a new one is elected."
+            }
+        ],
+        "reading_material_2": [
+            {
+                "article_number": 68,
+                "summary": "If the Vice-President's office becomes vacant, an election will be held quickly. The new Vice-President will serve a full five-year term."
+            },
+            {
+                "article_number": 69,
+                "summary": "Before taking office, the Vice-President must swear an oath to support and follow the Constitution of India."
+            }
+        ],
+        "reading_material_3": [
+            {
+                "article_number": 70,
+                "summary": "Parliament can make rules for the President's duties in situations not covered by the Constitution."
+            },
+            {
+                "article_number": 71,
+                "summary": "Any disputes related to the election of the President or Vice-President are decided by the Supreme Court. If the election is declared invalid, prior actions by the President or Vice-President are not invalidated. Parliament can make laws regarding elections, and vacancies among electors cannot challenge the election results."
+            },
+            {
+                "article_number": 72,
+                "summary": "The President can grant pardons, reprieves, and reduce or change sentences, especially in death penalty cases, court martials, or matters under Union laws. This power does not override the Armed Forces or State Governors' powers in some cases."
+            }
+        ],
+        "reading_material_4": [
+            {
+                "article_number": 73,
+                "summary": "The Union's executive power extends to matters that Parliament can legislate on and to matters under international treaties. States can continue exercising their executive power in certain areas until Parliament changes this."
+            },
+            {
+                "article_number": 74,
+                "summary": "The President must follow the advice of the Council of Ministers, headed by the Prime Minister. If needed, the President can ask the Council to reconsider the advice, but the details of this advice are not subject to court scrutiny."
+            }
+        ],
+        "reading_material_5": [
+            {
+                "article_number": 75,
+                "summary": "The Prime Minister and other Ministers are appointed by the President, based on the Prime Minister's advice. The number of Ministers cannot exceed 15% of the House of the People, and Ministers hold office at the President's pleasure. Ministers must take an oath, and if not a member of Parliament for six months, they lose their position."
+            },
+            {
+                "article_number": 76,
+                "summary": "The President appoints the Attorney-General, who advises the Government of India on legal matters. The Attorney-General has the right to appear in all courts and holds office at the President's pleasure."
+            }
+        ],
+        "reading_material_6": [
+            {
+                "article_number": 77,
+                "summary": "All government actions are carried out in the President's name, and these actions are valid even if not directly signed by the President. The President also makes rules for the business of government and its allocation to Ministers."
+            },
+            {
+                "article_number": 78,
+                "summary": "The Prime Minister must keep the President informed about government decisions, legislative proposals, and any other matters the President requests."
+            }
+        ]
     },
-    "South_Village_2": {
-      "reading_material_1": [
-        { "article_number": 73, "summary": "The Union's executive power extends to matters that Parliament can legislate on and to matters under international treaties. States can continue exercising their executive power in certain areas until Parliament changes this." },
-        { "article_number": 74, "summary": "The President must follow the advice of the Council of Ministers, headed by the Prime Minister. If needed, the President can ask the Council to reconsider the advice, but the details of this advice are not subject to court scrutiny." }
-      ],
-      "reading_material_2": [
-        { "article_number": 75, "summary": "The Prime Minister and other Ministers are appointed by the President, based on the Prime Minister's advice. The number of Ministers cannot exceed 15% of the House of the People, and Ministers hold office at the President's pleasure. Ministers must take an oath, and if not a member of Parliament for six months, they lose their position." },
-        { "article_number": 76, "summary": "The President appoints the Attorney-General, who advises the Government of India on legal matters. The Attorney-General has the right to appear in all courts and holds office at the President's pleasure." }
-      ],
-      "reading_material_3": [
-        { "article_number": 77, "summary": "All government actions are carried out in the President's name, and these actions are valid even if not directly signed by the President. The President also makes rules for the business of government and its allocation to Ministers." },
-        { "article_number": 78, "summary": "The Prime Minister must keep the President informed about government decisions, legislative proposals, and any other matters the President requests." }
-      ]
-    }
-  },
-  "ex_a3": {
-    "Northern_Library_Ruins": {
-      "reading_material_1": [
-        { "article_number": 153, "summary": "Every State shall have a Governor, and the same person can be appointed as Governor for multiple States." }
-      ],
-      "reading_material_2": [
-        { "article_number": 154, "summary": "The Governor holds the executive power of the State, exercised either personally or via subordinates, but existing legal powers and legislative provisions remain unaffected." },
-        { "article_number": 155, "summary": "The President appoints the Governor of a State through an official warrant under their hand and seal." }
-      ],
-      "reading_material_3": [
-        { "article_number": 156, "summary": "The Governor serves at the President's pleasure, with a term of five years unless resigned or removed. The Governor may continue in office until a successor assumes charge." }
-      ]
+    "ex_a3": {
+        "Northern_Library_Ruins": {
+            "reading_material_1": [
+                {
+                    "article_number": 153,
+                    "summary": "Every State shall have a Governor, and the same person can be appointed as Governor for multiple States."
+                }
+            ],
+            "reading_material_2": [
+                {
+                    "article_number": 154,
+                    "summary": "The Governor holds the executive power of the State, exercised either personally or via subordinates, but existing legal powers and legislative provisions remain unaffected."
+                },
+                {
+                    "article_number": 155,
+                    "summary": "The President appoints the Governor of a State through an official warrant under their hand and seal."
+                }
+            ],
+            "reading_material_3": [
+                {
+                    "article_number": 156,
+                    "summary": "The Governor serves at the President's pleasure, with a term of five years unless resigned or removed. The Governor may continue in office until a successor assumes charge."
+                }
+            ]
+        },
+        "Southern_Library_Ruins": {
+            "reading_material_1": [
+                {
+                    "article_number": 157,
+                    "summary": "To be appointed as a Governor, a person must be an Indian citizen and at least 35 years old."
+                },
+                {
+                    "article_number": 158,
+                    "summary": "The Governor cannot be a member of Parliament or State Legislature, nor hold any other office of profit. They are entitled to official residences, emoluments, and privileges, with safeguards ensuring no reduction in their emoluments during their term. For Governors of multiple States, emoluments are distributed as decided by the President."
+                }
+            ],
+            "reading_material_2": [
+                {
+                    "article_number": 159,
+                    "summary": "Before taking office, the Governor must pledge, through an oath or affirmation, to uphold the Constitution, defend the law, and serve the people, administered by the Chief Justice or senior-most Judge of the State's High Court."
+                }
+            ],
+            "reading_material_3": [
+                {
+                    "article_number": 160,
+                    "summary": "In unforeseen circumstances not covered in this Chapter, the President has the authority to decide how the Governor's functions will be carried out."
+                }
+            ]
+        }
     },
-    "Southern_Library_Ruins": {
-      "reading_material_1": [
-        { "article_number": 157, "summary": "To be appointed as a Governor, a person must be an Indian citizen and at least 35 years old." },
-        { "article_number": 158, "summary": "The Governor cannot be a member of Parliament or State Legislature, nor hold any other office of profit. They are entitled to official residences, emoluments, and privileges, with safeguards ensuring no reduction in their emoluments during their term. For Governors of multiple States, emoluments are distributed as decided by the President." }
-      ],
-      "reading_material_2": [
-        { "article_number": 159, "summary": "Before taking office, the Governor must pledge, through an oath or affirmation, to uphold the Constitution, defend the law, and serve the people, administered by the Chief Justice or senior-most Judge of the State's High Court." }
-      ],
-      "reading_material_3": [
-        { "article_number": 160, "summary": "In unforeseen circumstances not covered in this Chapter, the President has the authority to decide how the Governor's functions will be carried out."}
+    "ex_a4": {
+        "reading_material_1": [
+            {
+                "article_number": 161,
+                "summary": "The Governor has the authority to pardon, suspend, remit, or commute sentences for offences under laws within the State's executive jurisdiction."
+            },
+            {
+                "article_number": 162,
+                "summary": "The State's executive power covers matters within its legislative authority but is limited by the Union's executive power in concurrent matters as defined by the Constitution or parliamentary laws."
+            },
+            {
+                "article_number": 163,
+                "summary": "A Council of Ministers, led by the Chief Minister, advises the Governor except in cases where the Governor must act independently. The Governor's discretionary decisions are final and cannot be challenged, and ministerial advice is not subject to judicial review."
+            },
+            {
+                "article_number": 164,
+                "summary": "The Chief Minister is appointed by the Governor, while other Ministers are appointed based on the Chief Minister's advice. The Council of Ministers is collectively responsible to the Legislative Assembly. Limits on the number of Ministers (15% of Assembly members, minimum 12) were introduced by the 91st Amendment. Ministers must take an oath, cannot hold office if not a legislator for six months, and have salaries decided by the Legislature or Second Schedule."
+            }
+        ],
+        "reading_material_2": [
+            {
+                "article_number": 165,
+                "summary": "The Advocate-General, appointed by the Governor, provides legal advice to the State Government, performs legal duties, and serves at the Governor's discretion with remuneration decided by the Governor."
+            },
+            {
+                "article_number": 166,
+                "summary": "State executive actions are issued in the Governor's name, following specific authentication rules. The Governor also formulates rules for business transactions and Ministerial responsibilities."
+            },
+            {
+                "article_number": 167,
+                "summary": "The Chief Minister must keep the Governor informed of government decisions, provide information on administration and legislation when requested, and submit unreviewed decisions to the Council if required."
+            }
         ]
     }
-  },
-
-  "ex_a4": {
-    "Eastern_Part_of_Town": {
-      "reading_material_1": [
-        { "article_number": 161, "summary": "The Governor has the authority to pardon, suspend, remit, or commute sentences for offences under laws within the State's executive jurisdiction." },
-        { "article_number": 162, "summary": "The State's executive power covers matters within its legislative authority but is limited by the Union's executive power in concurrent matters as defined by the Constitution or parliamentary laws." },
-        { "article_number": 163, "summary": "A Council of Ministers, led by the Chief Minister, advises the Governor except in cases where the Governor must act independently. The Governor's discretionary decisions are final and cannot be challenged, and ministerial advice is not subject to judicial review." },
-        { "article_number": 164, "summary": "The Chief Minister is appointed by the Governor, while other Ministers are appointed based on the Chief Minister's advice. The Council of Ministers is collectively responsible to the Legislative Assembly. Limits on the number of Ministers (15% of Assembly members, minimum 12) were introduced by the 91st Amendment. Ministers must take an oath, cannot hold office if not a legislator for six months, and have salaries decided by the Legislature or Second Schedule." }
-      ]
-    },
-    "Western_Part_of_Town": {
-      "reading_material_2": [
-        { "article_number": 165, "summary": "The Advocate-General, appointed by the Governor, provides legal advice to the State Government, performs legal duties, and serves at the Governor's discretion with remuneration decided by the Governor." },
-        { "article_number": 166, "summary": "State executive actions are issued in the Governor's name, following specific authentication rules. The Governor also formulates rules for business transactions and Ministerial responsibilities." },
-        { "article_number": 167, "summary": "The Chief Minister must keep the Governor informed of government decisions, provide information on administration and legislation when requested, and submit unreviewed decisions to the Council if required." }
-      ]
-    }
-  }
 }
-

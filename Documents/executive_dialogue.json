@@ -1,0 +1,161 @@
+{
+  "area": "ex",
+  "ex_1": {
+    "npc_0": [
+      {
+        "character": "Gopal Ji",
+        "dialogue": "Lost, are you? I’m Gopal Ji from Kisanpur. Come, let me guide you to our village."
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "Yes please, That'll be really helpful!?"
+      },
+      {
+        "character": "Gopal Ji",
+        "dialogue": "This forest, Vanvihar, has a rich history. During the country’s freedom struggle, rebels hid here, leaving behind mysterious writings. We don’t fully understand them, but I’ve heard they hold valuable lessons. Maybe you can uncover their meaning."
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "I’d love to help! Where should I start looking?"
+      },
+      {
+        "character": "Gopal Ji",
+        "dialogue": "Start at the lotus farm nearby & Then search the carrot farm and spinach farm nearby to gather more scrolls.."
+      },
+      {
+        "character": "Gopal Ji",
+        "dialogue": "remember the scripts are kept inside chests. outside the farm dont Forget gain knowledge from it!!"
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "What should I look for in these writings?"
+      },
+      {
+        "character": "Gopal Ji",
+        "dialogue": "Each scroll holds valuable insights about leadership and the governance. Bring them back here once you’ve read them."
+      }
+    ],
+    "npc_0_aftertest": [
+      {
+        "character": "Sahil",
+        "dialogue": "Here are the writings I found. They explain a lot about governance and leadership!"
+      },
+      {
+        "character": "Gopal Ji",
+        "dialogue": "Fascinating! These writings remind me of something Sushil Ji in Patharwadi once mentioned. He knows much more about such matters."
+      },
+      {
+        "character": "Gopal Ji",
+        "dialogue": "Patharwadi is a woodcraft village to the bottom left of here, surrounded by dark brown mud. You’ll find it easily. Good luck on your journey!"
+      }
+    ],
+    "npc_1": [
+      {
+        "character": "Sushil Ji",
+        "dialogue": "Ah, the wanderer from Kisanpur! Gopal Ji told me about you. I’m Sushil."
+      },
+      {
+        "character": "Sushil Ji",
+        "dialogue": "Before I help, let’s test your knowledge about the President of India. Ready?"
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "I’m ready! Ask away."
+      },
+      {
+        "character": "Sushil Ji",
+        "dialogue": "Go to the house at back with a golden chest & axles"
+      },
+      {
+        "character": "Sushil Ji",
+        "dialogue": "Well done! You’ve got a solid grasp of the President’s role. But have you thought about how they’re elected? Or the Vice President’s responsibilities? Fascinating topics, aren’t they?"
+      }
+      ],
+    "npc_1_aftertest": [ {
+        "character": "Sahil",
+        "dialogue": "Now that you mention it, I’d like to know more. Where can I learn about them?"
+      },
+      {
+        "character": "Sushil Ji",
+        "dialogue": "Unfortunately, I’ve passed my writings to Vandana Devi in Ashaval. She might still have them."
+      },
+      {
+        "character": "Sushil Ji",
+        "dialogue": "Ashaval is to the right, a village shaped like a leaf and known for its medicines. You’ll find Vandana Devi easily—she’s quite knowledgeable. Good luck!"
+      }
+    ],
+    "npc_2": [
+      {
+        "character": "Vandana Devi",
+        "dialogue": "The forest holds many secrets, wanderer, and patience is the key to understanding them."
+      },
+      {
+        "character": "Vandana Devi",
+        "dialogue": "Sushil Ji mentioned you might visit. While I’d love to help, I passed the writings to my neighbors—they were curious to learn as well."
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "Where can I find these neighbors?"
+      },
+      {
+        "character": "Vandana Devi",
+        "dialogue": "You’ll find them nearby. Look for houses with burning furnaces; it’s chilly here, after all."
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "I’ve read the scrolls. They’re packed with knowledge about governance and responsibilities!"
+      },
+      {
+        "character": "Vandana Devi",
+        "dialogue": "Ah, you’ve learned much. Governance thrives when people come together for the greater good."
+      },
+      {
+        "character": "Vandana Devi",
+        "dialogue": "I’ve spoken with Ramesh Ji in Kirtinagar; he’ll guide you out of this forest."
+      },
+      {
+        "character": "Vandana Devi",
+        "dialogue": "Kirtinagar lies to the top left, known for its mushroom farms. May your journey be as refreshing as Vanvihar itself!"
+      }
+    ],
+    "npc_3": [
+      {
+        "character": "Ramesh Ji",
+        "dialogue": "Welcome, traveler! Looking for fresh mushrooms? Heard from Vandana Devi you need to leave the forest."
+      },
+      {
+        "character": "Ramesh Ji",
+        "dialogue": "My friend Kartik is in the blue mushroom house nearby. He will help you to go outside the village."
+      },
+      {
+        "character": "Ramesh Ji",
+        "dialogue": "Meet him, but be warned—he doesn’t trust easily, and you might have to prove yourself."
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "I’ll meet Kartik and do whatever it takes!"
+      }],
+    "npc_4": [
+      {
+      "character": "Kartik",
+      "dialogue": "Hi, i am karthik. i heard a lot about you from beloved Ramesh ji."
+    },
+      {
+        "character": "Sahil",
+        "dialogue": "oh ramesh ji sent me to prove my knowledge. and i heard you are not easy to please"
+      },
+      {
+        "character": "Kartik",
+        "dialogue": "lets test how well wised you are?? Ready??"
+      },
+      {
+        "character": "Sahil",
+        "dialogue": "Sure where can i prove my knowledge?"
+      },
+      {
+        "character": "Kartik",
+        "dialogue": "Here it self...... lets begin"
+      }
+    ]
+  }
+}
