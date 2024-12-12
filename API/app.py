@@ -223,7 +223,7 @@ def leaderboard():
         collection = database["user_data"]
         lead_board = list(collection.
                       find({},{'_id':0,"username":1,"score":1})
-                      .sort([("score", -1)]).limit(3))
+                      .sort([("score", 1)]).limit(3))
         return jsonify({"leaderboard": lead_board}), 200
     except Exception as e:
         error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
