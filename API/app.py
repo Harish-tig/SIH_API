@@ -230,12 +230,13 @@ def leaderboard():
 
 @app.route("/dialogue", methods=["GET"])
 def dialogue():
-    request_data = request.get_json()  # {"area": "base_map", "map":"ex_1" }
+    request_data = request.get_json()  # {"area": "base_map", "map":"ex_1","collection":"collection"}
     # Check if 'area' is in request data
     if "area" not in request_data:
         return jsonify({"error": "Invalid parameters or user ID invalid"}), 400
     area = request_data["area"]
     map = request_data["map"]
+    coll = request_data["collection"]
     client = None
     try:
         url = os.getenv("MONGO_URL")
@@ -245,7 +246,7 @@ def dialogue():
                              server_api=pymongo.server_api.
                              ServerApi(version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
-        collection = database["base_map_dialogue"]
+        collection = database[coll]
         # Query the collection for the specified 'area' and include the 'base_map'
         data_cursor = collection.find({"area": area}, {map: 1,"_id":0})
         data = list(data_cursor)
