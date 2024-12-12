@@ -4,7 +4,7 @@ from pymongo import MongoClient,server_api
 from function import userIdGen
 from random import shuffle
 import random
-import pprint
+# import pprint
 
 app = Flask(__name__)
 
@@ -230,11 +230,12 @@ def leaderboard():
 
 @app.route("/dialogue", methods=["GET"])
 def dialogue():
-    request_data = request.get_json()  # {"area": "base_map"}
+    request_data = request.get_json()  # {"area": "base_map", "map":"ex_1" }
     # Check if 'area' is in request data
     if "area" not in request_data:
         return jsonify({"error": "Invalid parameters or user ID invalid"}), 400
     area = request_data["area"]
+    map = request_data["map"]
     client = None
     try:
         url = os.getenv("MONGO_URL")
@@ -246,7 +247,7 @@ def dialogue():
         database = client["constitution"]
         collection = database["base_map_dialogue"]
         # Query the collection for the specified 'area' and include the 'base_map'
-        data_cursor = collection.find({"area": area}, {"base_map": 1,"_id":0})
+        data_cursor = collection.find({"area": area}, {map: 1,"_id":0})
         data = list(data_cursor)
         return jsonify(data[0]),200
     except Exception as e:
