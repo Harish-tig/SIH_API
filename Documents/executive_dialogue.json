@@ -7,7 +7,7 @@
         "dialogue": "Lost, are you? I’m Gopal Ji from Kisanpur. Come, let me guide you to our village."
       },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "Yes please, That'll be really helpful!?"
       },
       {
@@ -15,7 +15,7 @@
         "dialogue": "This forest, Vanvihar, has a rich history. During the country’s freedom struggle, rebels hid here, leaving behind mysterious writings. We don’t fully understand them, but I’ve heard they hold valuable lessons. Maybe you can uncover their meaning."
       },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "I’d love to help! Where should I start looking?"
       },
       {
@@ -23,21 +23,15 @@
         "dialogue": "Start at the lotus farm nearby & Then search the carrot farm and spinach farm nearby to gather more scrolls.."
       },
       {
-        "character": "Gopal Ji",
-        "dialogue": "remember the scripts are kept inside chests. outside the farm dont Forget gain knowledge from it!!"
-      },
-      {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "What should I look for in these writings?"
       },
       {
         "character": "Gopal Ji",
         "dialogue": "Each scroll holds valuable insights about leadership and the governance. Bring them back here once you’ve read them."
-      }
-    ],
-    "npc_0_aftertest": [
+      },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "Here are the writings I found. They explain a lot about governance and leadership!"
       },
       {
@@ -59,20 +53,22 @@
         "dialogue": "Before I help, let’s test your knowledge about the President of India. Ready?"
       },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "I’m ready! Ask away."
       },
       {
         "character": "Sushil Ji",
         "dialogue": "Go to the house at back with a golden chest & axles"
+      },{
+        "character": "Sushil Ji",
+        "dialogue": "i think You’ve got a solid grasp of the President’s role. But have you thought about how they’re elected? "
       },
       {
-        "character": "Sushil Ji",
-        "dialogue": "Well done! You’ve got a solid grasp of the President’s role. But have you thought about how they’re elected? Or the Vice President’s responsibilities? Fascinating topics, aren’t they?"
-      }
-      ],
-    "npc_1_aftertest": [ {
-        "character": "Sahil",
+        "character": "Sushil ji",
+        "dialogue": "Or the Vice President’s responsibilities? Fascinating topics, aren’t they?"
+      },
+      {
+        "character": "Rishi",
         "dialogue": "Now that you mention it, I’d like to know more. Where can I learn about them?"
       },
       {
@@ -94,7 +90,7 @@
         "dialogue": "Sushil Ji mentioned you might visit. While I’d love to help, I passed the writings to my neighbors—they were curious to learn as well."
       },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "Where can I find these neighbors?"
       },
       {
@@ -102,7 +98,7 @@
         "dialogue": "You’ll find them nearby. Look for houses with burning furnaces; it’s chilly here, after all."
       },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "I’ve read the scrolls. They’re packed with knowledge about governance and responsibilities!"
       },
       {
@@ -132,30 +128,379 @@
         "dialogue": "Meet him, but be warned—he doesn’t trust easily, and you might have to prove yourself."
       },
       {
-        "character": "Sahil",
+        "character": "Rishi",
         "dialogue": "I’ll meet Kartik and do whatever it takes!"
-      }],
-    "npc_4": [
+      }
+    ],
+    "npc_4_aftertest": [
       {
-      "character": "Kartik",
-      "dialogue": "Hi, i am karthik. i heard a lot about you from beloved Ramesh ji."
-    },
-      {
-        "character": "Sahil",
-        "dialogue": "oh ramesh ji sent me to prove my knowledge. and i heard you are not easy to please"
+        "character": "Ramesh Ji",
+        "dialogue": "Well done, wanderer! Kartik was impressed by you. He's inviting you to his village, which is outside the forest."
       },
       {
-        "character": "Kartik",
-        "dialogue": "lets test how well wised you are?? Ready??"
-      },
-      {
-        "character": "Sahil",
-        "dialogue": "Sure where can i prove my knowledge?"
-      },
-      {
-        "character": "Kartik",
-        "dialogue": "Here it self...... lets begin"
+        "character": "Ramesh Ji",
+        "dialogue": "Vanvihar has been a journey of discovery, hasn’t it? I wish you all the best for what lies ahead!"
       }
     ]
-  }
+  },
+    "ex_2": {
+        "npc_0": [
+            {
+                "character": "Kartik",
+                "dialogue": "Hi, I’m Kartik. You look new here."
+
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Hello Kartik, I’m here to explore this village"
+            },
+            {
+                "character": "Kartik",
+                "dialogue": "Welcome to Madhur Van! If you’re seeking wisdom, there’s no better place. Our Guruji knows the secrets of governance and leadership."
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Guruji? Where can I find him?"
+            },
+            {
+                "character": "Kartik",
+                "dialogue": "The Gurukul is in the remote north of the village, next to the yellow house of my friend Ravidas!"
+            }
+        ],
+        "npc_1": [
+            {
+                "character": "Guruji",
+                "dialogue": "Ah, a seeker of knowledge has arrived. Welcome to Madhur Van!"
+
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "I’ve heard you can teach me about governance."
+            },
+            {
+                "character": "Guruji",
+                "dialogue": "Indeed, governance shapes nations, and the Vice-President plays a crucial role."
+            },
+            {
+                "character": "Guruji",
+                "dialogue": "But wisdom must be earned, not given. Are you ready to begin?"
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Yes, I’m ready!"
+            },
+            {
+                "character": "Guruji",
+                "dialogue": "Good. Your first task is to learn about the Vice-President’s responsibilities and powers."
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Where may I find them?"
+            },
+            {
+                "character": "Guruji",
+                "dialogue": "Scattered across the western part of the village near the water reservoir are scrolls that explain Articles 66 to 72. Gather them and return to me."
+            }
+        ],
+        "npc_1_afterquest1": [
+            {
+                "character": "Guruji",
+                "dialogue": "Welcome back! You’ve gathered the scrolls. But tell me—what did you learn?"
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "I’ve learned the responsibilities of the Vice-President, including their role in overseeing elections, maintaining order, and handling certain presidential duties."
+            },
+            {
+                "character": "Guruji",
+                "dialogue": "Good! But knowledge is incomplete without reflection. Visit Ravidas’s house; he’ll test your understanding with riddles."
+            }
+        ],
+        "npc_2": [
+            {
+                "character": "Ravidas",
+                "dialogue": "Hello, To give the test please go by the ."
+            }],
+            "npc_2_aftertest1":[
+            {
+                "character": "Ravidas",
+                "dialogue": "Well done!"
+            },
+            {
+                "character": "Ravidas",
+                "dialogue": "Let us move to the next chapter: the President and the Council of Ministers. Their powers are vast, from international treaties to ministerial responsibilities. To learn more, you must seek new scrolls explaining Articles 73 to 78."
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "I’ll get started right away!"
+            },
+            {
+                "character": "Ravidas",
+                "dialogue": "Explore the Southern communities with spices. Remember, learning requires patience."
+            }
+        ],
+
+        "npc_2_afterquest2": [
+            {
+                "character": "Ravidas",
+                "dialogue": "But before I can declare you worthy, one final test awaits."
+            },
+            {
+                "character": "Ravidas",
+                "dialogue": "Go to the same location (Clock tower)."
+            },
+            {
+                "character": "Ravidas",
+                "dialogue": "Welocme back, To give the test please go by the ."
+            }
+        ],
+        "npc_2_aftertest2": [
+            {
+                "character": "Ravidas",
+                "dialogue": "You’ve impressed me, traveler. Guruji will be pleased!"
+            },
+            {
+                "character": "Guruji",
+                "dialogue": "You’ve done well, my student. You now carry the wisdom of governance. But this is only the beginning. Ahead lies Shiksha Nagar, where more challenges and lessons await. Go forth, and may knowledge be your guiding light."
+            }
+        ]
+    },
+  "ex_3": {
+    "npc_0": [
+      {
+        "character": "prakash",
+        "dialogue": "Welcome to Saraswat City, the hub of knowledge."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "Guruji mentioned your journey, and it’s no coincidence you’ve arrived during our Constitution Awareness Campaign."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "We’re preparing for an important town hall event, where citizens will ask questions about our nation’s governing principles. Someone has to answer them!"
+      },
+      {
+        "character": "Rishi",
+        "dialogue": "That sounds fascinating! Count me in."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "That’s the spirit! But let me warn you—only those who truly understand the Constitution can shine at the event."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "Luckily, the answers lie hidden within the city's six ancient libraries. Are you willing to take on this challenge?"
+      },
+      {
+        "character": "Rishi",
+        "dialogue": "I’m ready! Where can I find these libraries?"
+      },
+      {
+        "character": "prakash",
+        "dialogue": "These libraries, though abandoned, still whisper wisdom to those who seek it."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "The first three will teach you about the Governor’s role, powers, and term. They’re located in the northern part of the city."
+      },
+      {
+        "character": "Rishi",
+        "dialogue": "Got it! I’ll find them."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "Remember, the path to knowledge is never easy, but it’s always rewarding."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "Once you’ve explored these libraries, meet me here. I'll be waiting."
+      },
+      {
+        "character": "Rishi",
+        "dialogue": "See you soon, pakya!"
+      }
+    ],
+    "npc_0_afterquest1": [
+      {
+        "character": "prakash",
+        "dialogue": "Well done! The crowd is impressed by your understanding of the Governor’s foundational role."
+      },
+      {
+        "character": "prakash",
+        "dialogue": "You're invited to a meeting at Townhall-1 to prove your excellence."
+      },
+      {
+        "character": "Rishi",
+        "dialogue": "Great! Where's the Townhall-1 though?"
+      },
+      {
+        "character": "prakash",
+        "dialogue": "It is below the main street on the leftern side."
+      }
+    ],
+    "npc_1": {
+      "npc_1_beforequest2": [
+        {
+          "character": "prabhas",
+          "dialogue": "Congratulations! Now gain the complete knowledge by visiting the abandoned libraries of the south & after that visit the Townhall-2."
+        },
+        {
+          "character": "Rishi",
+          "dialogue": "Thanks, I'll be there."
+        }
+      ]
+    },
+    "npc_2": [
+      {
+        "character": "npc_0",
+        "dialogue": "This campaign wasn’t just an awareness event—it was a test. We were searching for someone who embodies the principles of knowledge and responsibility."
+      },
+      {
+        "character": "npc_0",
+        "dialogue": "You’ve passed with flying colors! As a reward, you’ve been invited to join the ranks of the elite thinkers in the Town of Elites. Congratulations and best of luck on the next chapter of your journey!"
+      },
+      {
+        "character": "Rishi",
+        "dialogue": "I’m honored! Thank you for this opportunity."
+      }
+    ]
+  },
+    "ex_4": {
+        "npc_0": [
+            {
+                "character": "Debater_1",
+                "dialogue": "The Governor’s pardoning powers under Article 161 are crucial to maintaining balance in the State’s executive framework!"
+            },
+            {
+                "character": "Debater_2",
+                "dialogue": "True, but don’t forget the Advocate-General’s legal guidance under Article 165. Without it, decisions could falter."
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Excuse me, what are they discussing?"
+            },
+            {
+                "character": "Acharya Adi",
+                "dialogue": "Ah, a seeker of wisdom! Welcome to our village. I sense you are eager to learn about governance and the Executive’s responsibilities. Is that true?"
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Yes, I want to understand the State Executive’s role better."
+            },
+            {
+                "character": "Acharya Adi",
+                "dialogue": "Excellent. The State Executive is a symphony of roles—the Governor, the Chief Minister, and the Advocate-General each play vital parts. To begin, focus on PART 1: Articles 161 to 164. These articles reveal the Governor’s powers and the Council of Ministers' duties."
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "Where should I start?"
+            },
+            {
+                "character": "Acharya Adi",
+                "dialogue": "Begin at the House of Logs in the east. Within its walls, you’ll find scrolls that hold the answers. Remember, knowledge is power, but understanding is mastery."
+            }
+        ],
+        "npc_1": {
+            "npc_1_beforequest1": [
+                {
+                    "character": "Housekeeper",
+                    "dialogue": "Ah, a visitor! You’ve come seeking knowledge, haven’t you? Behind the stack of logs in my house, you’ll find some ancient scrolls. They hold the secrets of Articles 161 to 164."
+                },
+                {
+                    "character": "Rishi",
+                    "dialogue": "Thank you! I’ll go take a look."
+                }
+            ],
+            "npc_1_afterquest1": [
+                {
+                    "character": "Housekeeper",
+                    "dialogue": "You’ve found them! Let me tell you what they reveal. Article 161 grants the Governor the power to pardon or reduce sentences—a responsibility that has changed lives and restored hope."
+                },
+                {
+                    "character": "Rishi",
+                    "dialogue": "That’s incredible. What about the other articles?"
+                },
+                {
+                    "character": "Housekeeper",
+                    "dialogue": "Article 162 defines the State’s executive powers, essential for managing key areas like health and education. Article 163 showcases how Governors make decisions, sometimes with and sometimes without their Council of Ministers' advice."
+                },
+                {
+                    "character": "Housekeeper",
+                    "dialogue": "And finally, Article 164 is about the Chief Minister. It’s their role to unite the Council of Ministers to create and implement policies."
+                },
+                {
+                    "character": "Housekeeper",
+                    "dialogue": "Now that you’ve learned this, it’s time to test your understanding. Head to Headquarters 1, just north of here. Guruji awaits your answers!"
+                }
+            ]
+        },
+        "npc_2": [
+            {
+                "character": "HQ1 Master",
+                "dialogue": "Well done. You’ve demonstrated a solid grasp of PART 1. But governance is a vast ocean. It’s time to explore PART 2: the Advocate-General’s role and procedural nuances of the State Executive."
+            },
+            {
+                "character": "Rishi",
+                "dialogue": "How do I gain complete knowledge?"
+            },
+            {
+                "character": "HQ1 Master",
+                "dialogue": "Go to the house in the western part of town. Over there you’ll find a golden chest of knowledge."
+            }
+        ],
+        "npc_3": {
+            "npc_3_beforequest2": [
+                {
+                    "character": "Acharya Gautam",
+                    "dialogue": "Ah, you’ve arrived! Your next step is simple. Behind my house lies the Golden Chest. Open it to find scrolls detailing Articles 165 to 167."
+                },
+                {
+                    "character": "Rishi",
+                    "dialogue": "Got it! I’ll take a look."
+                }
+            ],
+            "npc_3_afterquest2": [
+                {
+                    "character": "Acharya Gautam",
+                    "dialogue": "Excellent work! Now, let me explain. Article 165 outlines the Advocate-General’s duty to advise the State Government on legal matters—a role vital to ensuring lawful governance."
+                },
+                {
+                    "character": "Rishi",
+                    "dialogue": "And Article 166?"
+                },
+                {
+                    "character": "Acharya Gautam",
+                    "dialogue": "Article 166 ensures that the Governor authenticates all laws and orders passed by the State Government. It’s a crucial check for maintaining order."
+                },
+                {
+                    "character": "Rishi",
+                    "dialogue": "What about the final article?"
+                },
+                {
+                    "character": "Acharya Gautam",
+                    "dialogue": "Ah, Article 167. It requires the Chief Minister to keep the Governor informed about the State’s administration, ensuring transparency and trust between them."
+                },
+                {
+                    "character": "Acharya Gautam",
+                    "dialogue": "You’ve done well, but theory is only part of the challenge. Head to Headquarters 2, adjacent to Headquarters 1 in the north, and test what you’ve learned!"
+                }
+            ]
+        },
+        "npc_4": [
+            {
+                "character": "HQ2 Master",
+                "dialogue": "Remarkable! You’ve mastered the State Executive’s intricacies. You are now an Elite of the Executive, ready to venture into new realms of governance."
+            },
+            {
+                "character": "HQ2 Master",
+                "dialogue": "You are now among the elites, a guardian of knowledge and a seeker of justice. The Judiciary and Legislature await you. Choose your path wisely—each offers unique challenges and rewards. Go forth with confidence!"
+            }
+        ]
+    }
+
+
 }
+
+
+
+

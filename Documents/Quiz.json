@@ -42,48 +42,6 @@
       "answer": ["Preside over the Rajya Sabha"]
     }
   ],
-  "quiz_ex_2": [
-    {
-      "question": "What does Article 73 define about the Union executive powers?",
-      "options": [
-        "They are limited to matters in the Concurrent List only.",
-        "They extend to matters on which Parliament can legislate.",
-        "They are subordinate to the powers of the State executive.",
-        "They can only be exercised during emergencies."
-      ],
-      "answer": ["They extend to matters on which Parliament can legislate."]
-    },
-    {
-      "question": "What is the role of the Attorney-General of India?",
-      "options": [
-        "Represents India in the United Nations",
-        "Heads the judiciary",
-        "Acts as the chief legal advisor to the Government of India",
-        "Presides over the Lok Sabha"
-      ],
-      "answer": ["Acts as the chief legal advisor to the Government of India"]
-    },
-    {
-      "question": "Who appoints the Prime Minister of India?",
-      "options": [
-        "The Lok Sabha",
-        "The President of India",
-        "The Chief Justice of India",
-        "The Attorney-General of India"
-      ],
-      "answer": ["The President of India"]
-    },
-    {
-      "question": "What is the primary duty of the Prime Minister under Article 78?",
-      "options": [
-        "To preside over all sessions of the Parliament",
-        "To communicate decisions of the Council of Ministers to the President",
-        "To appoint the Attorney-General of India",
-        "To oversee the judiciary"
-      ],
-      "answer": ["To communicate decisions of the Council of Ministers to the President"]
-    }
-  ],
   "quiz_ex_3": [
     {
       "question": "What is the minimum age required to become a Governor?",

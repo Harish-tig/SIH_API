@@ -79,6 +79,8 @@ def insertdocs():
         "map": {
             "executive": {
                 "progress": 0,
+                "test_1":0,
+                "test_2":0,
                 "area_progress":{
                  "ex_a1": False,
                  "ex_a2": False,
@@ -91,6 +93,8 @@ def insertdocs():
                 }
             },
             "legislative": {
+                "test_1": 0,
+                "test_2": 0,
                 "progress": 0,
                 "area_progress":{
                  "lg_a1": False,
@@ -104,6 +108,8 @@ def insertdocs():
                 }
             },
             "judiciary": {
+                "test_1": 0,
+                "test_2": 0,
                 "progress": 0,
                 "area_progress":{
                  "jd_a1": False,
