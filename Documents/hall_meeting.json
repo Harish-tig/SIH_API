@@ -1,87 +1,141 @@
 {
-  "area": "ex",
-  "hall_meeting_ex_4": [
-    {
-      "question": "What power does the Governor have under Article 161?",
-      "options": [
-        "Enact laws in the state legislature",
-        "Grant pardons for offenses against state law",
-        "Dissolve the Council of Ministers",
-        "Pass state budgets"
-      ],
-      "answer": ["Grant pardons for offenses against state law"]
-    },
-    {
-      "question": "Who advises the Governor in performing their duties?",
-      "options": [
-        "President",
-        "Council of Ministers",
-        "Attorney-General",
-        "State Legislature"
-      ],
-      "answer": ["Council of Ministers"]
-    },
-    {
-      "question": "Who appoints the Chief Minister of a state?",
-      "options": [
-        "The President of India",
-        "The Speaker of the State Legislative Assembly",
-        "The Governor of the state",
-        "The Prime Minister of India"
-      ],
-      "answer": ["The Governor of the state"]
-    },
-    {
-      "question": "What does collective responsibility of ministers mean?",
-      "options": [
-        "All ministers must work in unison with the judiciary",
-        "Ministers are responsible for decisions made in the State Legislature",
-        "Ministers are collectively accountable to the State Legislature",
-        "Ministers must follow the Chief Minister’s orders without question"
-      ],
-      "answer": ["Ministers are collectively accountable to the State Legislature"]
-    }
-  ],
-  "hall_meeting_ex_2": [
-    {
-      "question": "What does Article 73 define about the Union executive powers?",
-      "options": [
-        "They are limited to matters in the Concurrent List only.",
-        "They extend to matters on which Parliament can legislate.",
-        "They are subordinate to the powers of the State executive.",
-        "They can only be exercised during emergencies."
-      ],
-      "answer": ["They extend to matters on which Parliament can legislate."]
-    },
-    {
-      "question": "What is the role of the Attorney-General of India?",
-      "options": [
-        "Represents India in the United Nations",
-        "Heads the judiciary",
-        "Acts as the chief legal advisor to the Government of India",
-        "Presides over the Lok Sabha"
-      ],
-      "answer": ["Acts as the chief legal advisor to the Government of India"]
-    },
-    {
-      "question": "Who appoints the Prime Minister of India?",
-      "options": [
-        "The Lok Sabha",
-        "The President of India",
-        "The Chief Justice of India",
-        "The Attorney-General of India"
-      ],
-      "answer": ["The President of India"]
-    },
-    {
-      "question": "What is the primary duty of the Prime Minister under Article 78?",
-      "options": [
-        "To preside over all sessions of the Parliament",
-        "To communicate decisions of the Council of Ministers to the President",
-        "To appoint the Attorney-General of India",
-        "To oversee the judiciary"
-      ],
-      "answer": ["To communicate decisions of the Council of Ministers to the President"]
-    }
-  ]
+    "area": "ex",
+    "hall_meeting_ex_4": [
+        {
+            "question": "What power does the Governor have under Article 161?",
+            "options": [
+                "Grant pardons for offenses against state law",
+                "Dissolve the Council of Ministers",
+                "Pass state budgets"
+            ],
+            "answer": [
+                "Grant pardons for offenses against state law"
+            ]
+        },
+        {
+            "question": "Who advises the Governor in performing their duties?",
+            "options": [
+                "President",
+                "Council of Ministers",
+                "State Legislature"
+            ],
+            "answer": [
+                "Council of Ministers"
+            ]
+        },
+        {
+            "question": "Who appoints the Chief Minister of a state?",
+            "options": [
+                "The Speaker of the State Legislative Assembly",
+                "The Governor of the state",
+                "The Prime Minister of India"
+            ],
+            "answer": [
+                "The Governor of the state"
+            ]
+        },
+        {
+            "question": "What does collective responsibility of ministers mean?",
+            "options": [
+                "All ministers must work in unison with the judiciary",
+                "Ministers are responsible for decisions made in the State Legislature",
+                "Ministers are collectively accountable to the State Legislature"
+            ],
+            "answer": [
+                "Ministers are collectively accountable to the State Legislature"
+            ]
+        }
+    ],
+    "hall_meeting_ex_2": [
+        {
+            "question": "What does Article 73 define about the Union executive powers?",
+            "options": [
+                "They are limited to matters in the Concurrent List only.",
+                "They extend to matters on which Parliament can legislate.",
+                "They can only be exercised during emergencies."
+            ],
+            "answer": [
+                "They extend to matters on which Parliament can legislate."
+            ]
+        },
+        {
+            "question": "What is the role of the Attorney-General of India?",
+            "options": [
+                "Represents India in the United Nations",
+                "Acts as the chief legal advisor to the Government of India",
+                "Presides over the Lok Sabha"
+            ],
+            "answer": [
+                "Acts as the chief legal advisor to the Government of India"
+            ]
+        },
+        {
+            "question": "Who appoints the Prime Minister of India?",
+            "options": [
+                "The President of India",
+                "The Chief Justice of India",
+                "The Attorney-General of India"
+            ],
+            "answer": [
+                "The President of India"
+            ]
+        },
+        {
+            "question": "What is the primary duty of the Prime Minister under Article 78?",
+            "options": [
+                "To preside over all sessions of the Parliament",
+                "To communicate decisions of the Council of Ministers to the President",
+                "To oversee the judiciary"
+            ],
+            "answer": [
+                "To communicate decisions of the Council of Ministers to the President"
+            ]
+        }
+    ],
+    "hall_meeting_ex_1": [
+        {
+            "question": "Who is the head of the Indian state?",
+            "options": [
+                "Prime Minister",
+                "Vice-President",
+                "President"
+            ],
+            "answer": [
+                "President"
+            ]
+        },
+        {
+            "question": "How is the President elected?",
+            "options": [
+                "By citizens directly",
+                "By an Electoral College",
+                "By the Prime Minister and Chief Ministers"
+            ],
+            "answer": [
+                "By an Electoral College"
+            ]
+        },
+        {
+            "question": "What is the minimum age required to become the President?",
+            "options": [
+                "30 years",
+                "35 years",
+                "40 years"
+            ],
+            "answer": [
+                "35 years"
+            ]
+        },
+        {
+            "question": "What is the term length for the President?",
+            "options": [
+                "4 years",
+                "5 years",
+                "7 years"
+            ],
+            "answer": [
+                "5 years"
+            ]
+        }
+    ]
 }

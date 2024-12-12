@@ -10,12 +10,12 @@ app = Flask(__name__)
 
 #todo:
 '''
-reading material ka api.
+reading material ka api. ✅
 fetching tip of the day api ✅
 card api ✅
 article progress update api ✅
 progress api ✅
-language translation api
+language translation api ✅
 '''
 
 @app.route('/')
@@ -166,9 +166,9 @@ def update_score():
             version="1", strict=True, deprecation_errors=True))
         database = client["constitution"]
         collection = database["user_data"]
-        d_score = collection.find_one({"userid":f"{userid}"},{"score":1,"_id":0})
-        new_score = d_score['score'] + point
-        collection.update_one(filter={"userid":f"{userid}"},update={"$set":{"score":new_score}}) #userid
+        # d_score = collection.find_one({"userid":f"{userid}"},{"score":1,"_id":0})
+        # new_score = d_score['score'] + point
+        collection.update_one(filter={"userid":f"{userid}"},update={"$set":{"score":point}}) #userid
         return  jsonify({"data":"updated"}), 201
     except Exception as e:
         error_mssg = jsonify({"result": f"some unwanted Error occured: --> {e}"})
